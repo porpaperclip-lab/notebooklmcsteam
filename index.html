@@ -84,10 +84,10 @@
             width: 100%;
         }
 
-        /* ================= ส่วนกล่องฟีเจอร์ 4 กล่อง ================= */
+        /* ================= ส่วนกล่องฟีเจอร์ 8 กล่อง ================= */
         .features-grid {
             display: grid;
-            /* จัดให้เป็น 4 กล่องเรียงกันในแนวนอน */
+            /* จัดให้เป็น 4 กล่องต่อ 1 แถว เมื่อเกิน 4 กล่องจะปัดลงบรรทัดใหม่ให้อัตโนมัติ */
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
             margin-top: 20px;
@@ -112,6 +112,10 @@
         .card-lightblue { border-top: 4px solid #90c2e7; }
         .card-purple { border-top: 4px solid #b39ddb; }
         .card-red { border-top: 4px solid #ff7a7a; }
+        .card-green { border-top: 4px solid #4caf50; }
+        .card-orange { border-top: 4px solid #ff9800; }
+        .card-teal { border-top: 4px solid #00bcd4; }
+        .card-pink { border-top: 4px solid #e91e63; }
 
         .icon {
             width: 32px;
@@ -207,6 +211,38 @@
                 </svg>
                 <h3>Easy to use</h3>
                 <p>ใช้งานง่าย เพียงไม่กี่คลิกก็เข้าถึงข้อมูลผลิตภัณฑ์ที่คุณต้องการได้ทันที</p>
+            </div>
+
+            <div class="feature-card card-green">
+                <svg class="icon" viewBox="0 0 24 24" fill="#4caf50">
+                    <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+                </svg>
+                <h3>Fast Support</h3>
+                <p>ข้อมูลอัปเดตแบบเรียลไทม์ ช่วยลดระยะเวลาในการหาคำตอบให้ลูกค้า</p>
+            </div>
+
+            <div class="feature-card card-orange">
+                <svg class="icon" viewBox="0 0 24 24" fill="#ff9800">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+                <h3>Secure Data</h3>
+                <p>มาตรฐานการรักษาความปลอดภัยของข้อมูล ให้คุณทำงานด้วยความมั่นใจ</p>
+            </div>
+
+            <div class="feature-card card-teal">
+                <svg class="icon" viewBox="0 0 24 24" fill="#00bcd4">
+                    <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/>
+                </svg>
+                <h3>Analytics</h3>
+                <p>รวบรวมสถิติการค้นหา เพื่อนำไปปรับปรุงชุดข้อมูลให้ตรงจุดมากยิ่งขึ้น</p>
+            </div>
+
+            <div class="feature-card card-pink">
+                <svg class="icon" viewBox="0 0 24 24" fill="#e91e63">
+                    <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                </svg>
+                <h3>Centralized</h3>
+                <p>รวบรวมทุกลิงก์การทำงาน และระบบต่างๆ ไว้ในที่เดียว ไม่ต้องเปิดหลายหน้าต่าง</p>
             </div>
 
         </div>
